@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniQuiz - Criar Novo Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-quizes">
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html" class="logo-link">
+                <img src="assets/logo.png" alt="Logo UniQuiz" class="logo-img">
+                <span class="logo-text">UniQuiz</span>
+            </a>
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="quizes.html">Quizes</a></li>
+                <li><a href="#">Meus Quizes</a></li>
+                <li><a href="#">Ranking</a></li>
+                <li><a href="index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container-criar-quiz">
+        <section class="painel-criar-quiz">
+
+            <h1 class="titulo-criar-quiz">Criar Novo Quiz:<br>Detalhes</h1>
+
+            <div class="card-criar-quiz">
+                
+                <div class="linha-superior-criacao">
+                    <div class="campo-grande">
+                        <label for="categoria">Nome da Categoria</label>
+                        <input type="text" id="categoria" placeholder="Digite aqui o nome da categoria...">
+                    </div>
+
+                    <div class="area-upload-capa">
+                        <button class="btn-upload-capa">+ Adicionar<br>Imagem de Capa</button>
+                    </div>
+                </div>
+
+                <div class="faixa-divisoria"></div>
+
+                <div class="linha-dupla-criacao">
+                    <div class="campo-grande">
+                        <label for="titulo-quiz">Título do Quiz</label>
+                        <input type="text" id="titulo-quiz" placeholder="Digite aqui o título do Quiz...">
+                    </div>
+
+                    <div class="campo-grande">
+                        <label for="dificuldade">Selecione a dificuldade</label>
+                        <input type="text" id="dificuldade" placeholder="">
+                    </div>
+                </div>
+
+                <div class="linha-dupla-criacao">
+                    <div class="campo-textarea">
+                        <label for="pergunta">Pergunta #1</label>
+                        <textarea id="pergunta" placeholder="Digite aqui sua pergunta"></textarea>
+                    </div>
+
+                    <div class="campo-textarea">
+                        <label for="pontuacao">Pontuação da pergunta</label>
+                        <textarea id="pontuacao" placeholder="Digite a pontuação. Exemplo:&#10;--> 1.00&#10;--> 2.00&#10;--> 5.00"></textarea>
+                    </div>
+                </div>
+
+                <h2 class="titulo-alternativas">Escreva as alternativas</h2>
+
+                <div class="alternativas-box">
+                    <div class="alternativa-item">
+                        <div class="marcador-alt correto"></div>
+                        <div class="campo-alternativa">
+                            <label for="alt-a">Alternativa A</label>
+                            <input type="text" id="alt-a" placeholder="Digite sua resposta">
+                        </div>
+                    </div>
+
+                    <div class="alternativa-item">
+                        <div class="marcador-alt errado"></div>
+                        <div class="campo-alternativa">
+                            <label for="alt-b">Alternativa B</label>
+                            <input type="text" id="alt-b" placeholder="Digite sua resposta">
+                        </div>
+                    </div>
+
+                    <div class="alternativa-item">
+                        <div class="marcador-alt errado"></div>
+                        <div class="campo-alternativa">
+                            <label for="alt-c">Alternativa C</label>
+                            <input type="text" id="alt-c" placeholder="Digite sua resposta">
+                        </div>
+                    </div>
+
+                    <div class="alternativa-item">
+                        <div class="marcador-alt errado"></div>
+                        <div class="campo-alternativa">
+                            <label for="alt-d">Alternativa D</label>
+                            <input type="text" id="alt-d" placeholder="Digite sua resposta">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="acoes-criar-quiz">
+                    <button class="btn-secundario-quiz">Salvar pergunta & Adicionar Nova</button>
+                    <button class="btn-principal-quiz">Finalizar & Salvar Quiz</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
